@@ -705,10 +705,7 @@ public class LGButton: UIControl {
     }
     
     @IBAction func tapAction(_ sender: Any) {
-        let shouldSendActions = pressed
         pressed = false
-        if shouldSendActions{
-            sendActions(for: .touchUpInside)
-        }
+        sendActions(for: .touchUpInside)
     }
 }
